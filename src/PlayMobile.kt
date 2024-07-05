@@ -1,0 +1,6 @@
+class PlayMobile {
+
+    init {
+
+    }
+}
