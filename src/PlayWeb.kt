@@ -1,13 +1,13 @@
-import Player.Player
+class PlayWeb(player: Player) {
 
-class PlayWeb() {
-    val Player = Player(name = "Bob420", craft = "Sniper", exp = 0)
+    val playerName = player.name
+    val playerCraft = player.craft
+    var playerExp = player.exp
+
+
 
     init {
-        val name = Player.name
-        val craft = Player.craft
-        val level = Player.exp
-        println("Hello welcome to Devcraft $name, you seem to be a Web Developer.")
+        println("Hello welcome to Devcraft $playerName, you seem to be a $playerCraft.")
         println("Let me introduce you to your tool set.")
     }
 }

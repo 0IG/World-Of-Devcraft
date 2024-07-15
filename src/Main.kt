@@ -1,13 +1,10 @@
-import Player.Player
 import kotlin.random.Random
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
-    val PlayMobile = PlayMobile()
-    val PlayCyber = PlayCyber()
-    val PlayWeb = PlayWeb()
+    val playerCreator = PlayerCreator()
 
     print(" __    __           _     _     ___  __      ___            ___           __ _   \n" +
             "/ / /\\ \\ \\___  _ __| | __| |   /___\\/ _|    /   \\_____   __/ __\\ __ __ _ / _| |_ \n" +
@@ -17,12 +14,12 @@ fun main() {
             "                                                                                 \n" +
             "\n")
 
-    val Player = Player(name = "Leroy J", craft = "Unemployed", exp = 0)
+    val player = playerCreator.createPlayer()
 
 
-    when (Player.craft) {
+    when (player.craft) {
         "Web Developer" -> {
-            PlayWeb()
+            PlayWeb(player)
         }
         "Mobile Developer" -> {
             PlayMobile()
@@ -30,7 +27,7 @@ fun main() {
         "Cyber Security" -> {
             PlayCyber()
         }
-        "Mobile Developer" -> {
+        "QA Engineer" -> {
             println("QA chosen but not game path not yet written")
         }
         else -> {
