@@ -7,7 +7,7 @@ class PlayWeb(player: Player) {
 
 
     init {
-        println("Hello welcome to Devcraft $playerName, you seem to be a $playerCraft.")
+        println("Hello welcome to Devcraft $playerName, you seem to be a $playerCraft. You have $playerExp xp points!")
         println("Let me introduce you to your tool set.")
     }
 }

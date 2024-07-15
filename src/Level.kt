@@ -1,6 +1,6 @@
 
 fun main (){
-    val level = Level(exp = 0)
+    val level = Level(exp = 420)
     println(level.level)
 }
 class Level(val exp : Int) {
@@ -15,6 +15,7 @@ class Level(val exp : Int) {
             println(playersLevel)
             if (exp < points.value) {
                 playersLevel = points.key
+                break
             }
         }
         return playersLevel
