@@ -18,6 +18,7 @@ class PlayerCreator constructor() {
         val craftKey = readln().toInt()
         val craft = devsCraft[craftKey]
 
+        // Assign Tools To Player.
         fun assignTools(craft : String): MutableList<String> {
 
             when (craft) {
