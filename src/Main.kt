@@ -1,5 +1,3 @@
-import kotlin.random.Random
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
@@ -22,10 +20,10 @@ fun main() {
             PlayWeb(player)
         }
         "Mobile Developer" -> {
-            PlayMobile()
+            PlayMobile(player)
         }
         "Cyber Security" -> {
-            PlayCyber()
+            PlayCyber(player)
         }
         "QA Engineer" -> {
             println("QA chosen but not game path not yet written")
@@ -34,33 +32,6 @@ fun main() {
             println("Game path not yet written")
         }
     }
-    // Dice roll function
-    fun diceRoll() : Int {
-        val roll : Int = Random.nextInt(1, 12)
-        println("You rolled a: $roll out of 12")
-        return roll
-    }
 
-    // Function to give players their tools based on Craft
-    fun craftsTools(craft: String){
-        val tools : MutableList<String>
-        when (craft) {
-            "Web Developer" -> {
-                tools = mutableListOf("React", "JavaScript", "PostgreSQL", "Node")
-            }
-            "Mobile Developer" -> {
-                tools = mutableListOf("Android Studio", "Kotlin", "AWS", "Firebase")
-            }
-            "Cyber Security" -> {
-                tools = mutableListOf("Kali Linux", "WireShark", "Metasploit", "Nmap")
-            }
-            "Data Analyst" -> {
-                tools = mutableListOf("Python", "R", "Tableau", "Excel")
-            }
-            "QA Engineer" -> {
-                tools = mutableListOf("Postman", "Jira", "Apache", "Selenium")
-            }
-        }
-    }
 
 }
