@@ -43,7 +43,6 @@ class PlayerCreator constructor() {
 
         assignTools(craft!!)
 
-        println("$name is a $craft and is a level : 1")
         return Player(name = name, craft = craft, exp = 0, tools = tools)
     }
 }
